@@ -6,6 +6,9 @@
             -use tiny png to compress 
             - use script to convert images to webp
     - Change favicon
+    - make html semantic
+    - add arias where applicable
+    -add a skills sections called technology toolbox
 
 
 ## Questions and learned Things to write about:

@@ -4,7 +4,7 @@ import DownloadPDF from "../../assets/nav-elements/download-pdf-lg.png"
 import './Nav.scss'
 function Nav() {
   return (
-<nav  className='border border-red-100 fixed  top-0 z-[999] flex justify-between items-center p-6 w-full max-w-[1180px]'>
+<nav  className='  z-[999] flex justify-between items-center px-5 py-6 w-full max-w-[1180px]'>
     <picture>
   <source srcSet={Logo} type='image/png' media="(min-width: 650px)" width={175} height={34} />
   <img src={Logo} alt="Dwayne B Logo" width={115} height={34}/>

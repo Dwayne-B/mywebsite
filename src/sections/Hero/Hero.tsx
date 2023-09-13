@@ -3,7 +3,7 @@ import {ReactSVG} from 'react-svg';
 import './Hero.scss'
 function Hero() {
   return (
-    <div className="hero relative h-screen w-full flex flex-col justify-center items-center text-center gap-8 border-red-700 border-2">
+    <div className="hero relative h-screen w-full flex flex-col justify-center items-center text-center gap-8">
        <ReactSVG src={Svg}  beforeInjection={(svg) => {
     svg.classList.add('hero__svg')
   }}/>
