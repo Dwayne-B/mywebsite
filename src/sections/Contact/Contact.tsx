@@ -5,8 +5,8 @@ function Contact() {
 
 	return (
 		<div>
-			<div className="px-6 mb-24">
-				<h2>Contact</h2>
+			<div id="contact" className="px-6 mb-24">
+				<h2>Let's Get To Business</h2>
 				<ContactForm />
 			</div>
 		</div>

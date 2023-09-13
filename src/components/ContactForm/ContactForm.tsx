@@ -59,7 +59,7 @@ function ContactForm() {
 					variants={ContactFormAnimation}
 					whileInView='show'
 					htmlFor='msg'>
-					Say Hello
+					How can I help?
 				</motion.label>
 				<textarea
 					id='msg'

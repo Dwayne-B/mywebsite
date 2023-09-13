@@ -2,7 +2,7 @@
 function Projects() {
     const Projects = [1,2,3,4,5,6];
   return (
-    <div className='px-6 my-24'>
+    <div id='projects' className='px-6 my-24'>
         <h2>Projects</h2>
         <span>
             <ul className='projects__filter-list flex gap-3'>
