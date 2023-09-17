@@ -1,11 +1,45 @@
 import Logo from "../../assets/logo/logo-lg.png"
-
-import DownloadPDF from "../../assets/nav-elements/download-pdf-lg.png"
+import NavSvg from "../NavSvg/NavSvg"
+import Hamburger from 'hamburger-react';
+import { useState } from 'react';
 import './Nav.scss'
-// Change this component to a hamburger the same as my current portfolio
+
+import { motion } from 'framer-motion';
+
+
+
+const NavAnimations = {
+  hover: { opacity: 1 },
+  clicked: { color: '#34725d' },
+};
 function Nav() {
+  const [isOpen, setOpen] = useState(false);
+	const [color, setColor] = useState("#fff");
   return (
 <nav  className='  z-[999] flex justify-between items-center px-5 py-6 w-full max-w-[1180px]'>
+{isOpen ? (
+				<motion.div className=' 
+        absolute right-0 top-0 bg-black h-screen w-80  py-40 flex flex-col items-center gap-5 z-[1] '>
+					<ul className='  flex flex-col items-center gap-8  '>
+    <li onClick={()=>{
+      setOpen((prev)=>!prev)
+    }}><a href="#projects">Projects</a></li>
+    <li onClick={()=>{
+      setOpen((prev)=>!prev)
+    }} ><a href="#about">About</a></li>
+    <li onClick={()=>{
+      setOpen((prev)=>!prev)
+    }}><a href="#contact">Contact</a></li>
+    <li onClick={()=>{
+      setOpen((prev)=>!prev)
+    }}>
+      {/* replace undefined with resume. add a plain text and creative version to download */}
+   <a href={'#'}> <NavSvg/></a>
+ 
+    </li>
+  </ul>
+				</motion.div>
+			) : null}
     <a href="#">
     <picture>
   <source srcSet={Logo} type='image/png' media="(min-width: 650px)" width={175} height={34} />
@@ -13,18 +47,21 @@ function Nav() {
  
 </picture>
     </a>
-<ul className='  flex items-center gap-8  '>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li>
-      {/* replace undefined with resume. add a plain text and creative version to download */}
-   <a href={'#'}> <img  src={DownloadPDF} alt="Download Resume PDF" width={25} height={25}/></a>
- 
-    </li>
-  </ul>
+
+  <Hamburger
+			
+				color={color}
+        onToggle={()=>{
+          setColor((prev)=>{return '#6fe7b7'})
+        }}
+				toggled={isOpen}
+				toggle={setOpen}
+			/>
     </nav>
   )
 }
 
 export default Nav
+
+
+
