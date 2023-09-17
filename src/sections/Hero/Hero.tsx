@@ -16,7 +16,7 @@ const HeroAnimation = {
 }
 function Hero() {
   return (
-    <div id='home' className="hero relative h-screen w-full  flex flex-col lg:flex-row  justify-center 
+    <div id='home' className="hero relative h-screen flex flex-col lg:flex-row  justify-center
 
     items-center text-center lg:text-left gap-8 px-6">
      
