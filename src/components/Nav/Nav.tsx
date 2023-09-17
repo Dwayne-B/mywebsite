@@ -19,7 +19,7 @@ function Nav() {
 <nav  className='  z-[999] flex justify-between items-center px-5 py-6 w-full max-w-[1180px]'>
 {isOpen ? (
 				<motion.div className=' 
-        absolute right-0 top-0 bg-black h-screen w-80  py-40 flex flex-col items-center gap-5 z-[1] '>
+        absolute right-0 top-0 bg-black h-full w-80  py-40 flex flex-col items-center gap-5 z-[1] '>
 					<ul className='  flex flex-col items-center gap-8  '>
     <li onClick={()=>{
       setOpen((prev)=>!prev)
@@ -52,7 +52,9 @@ function Nav() {
 			
 				color={color}
         onToggle={()=>{
-          setColor((prev)=>{return '#6fe7b7'})
+          setColor((prev)=>{
+            prev='#6fe7b7';
+          return prev})
         }}
 				toggled={isOpen}
 				toggle={setOpen}

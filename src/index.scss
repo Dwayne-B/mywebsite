@@ -25,9 +25,24 @@ h1{
 }
 h2{
   font-size: u.toRem(28);
+  position: relative;
+  width: fit-content;
 }
+h2::after{
+  content:"";
+  border-bottom:solid #6fe7b7 1px;
+  left:0;
+  bottom: 0;
+  position: absolute;
+  width:100%
+
+}
+
 p{
   font-size: u.toRem(18);
   line-height: u.toRem(32); /* 277.778% */
   font-weight: 500;
+}
+input,textarea{
+  border-radius: u.toRem(15);
 }

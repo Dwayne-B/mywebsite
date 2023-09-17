@@ -23,7 +23,7 @@ function ContactForm() {
 			target=''
 			action='https://formspree.io/f/xvonrryo'
 			method='POST'
-			className='Contact-form '>
+			className='Contact-form flex flex-col my-12 max-w-[28rem] m-auto'>
 			<span>
 				<motion.label
 					variants={ContactFormAnimation}

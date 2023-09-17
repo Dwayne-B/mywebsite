@@ -1,10 +1,5 @@
 @use '../../SassUtil/index' as u;
-.Contact-form {
-	margin-top: u.toRem(30);
-	display: flex;
-	flex-direction: column;
-	max-width: u.toRem(450);
-}
+
 .Contact-form button {
 	align-self: center;
 	margin-top: u.toRem(30);

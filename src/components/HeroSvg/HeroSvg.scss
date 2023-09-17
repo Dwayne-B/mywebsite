@@ -2,7 +2,7 @@
     @use '../../sassUtil/index' as u;
 .heroSvg{
   // BUG when using u.toRem(1.25) nothing is applied
-    width: 20rem;
+  
     position: absolute;
     left: 50%;
   transform: translateX(-50%);

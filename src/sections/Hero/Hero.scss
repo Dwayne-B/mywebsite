@@ -1,4 +1,5 @@
 @use '../../sassUtil/index' as u;
+
 .hero__button{
   font-size: u.toRem(32);
   transition-duration: .3s;
