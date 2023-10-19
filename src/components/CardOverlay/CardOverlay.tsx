@@ -33,8 +33,8 @@ function CardOverlay({project,controls}) {
     <motion.div variants={overlayAnimation}  animate={controls} initial={"init"}className=' rounded-xl overlay p-5 flex flex-col justify-around items-center'>
         <motion.h3 variants={ContentAnimation} initial={"init"}
   animate={controls}
-   className="text-4xl font-semibold">{project.title}</motion.h3>
-        <motion.p variants={ContentAnimation} initial={"init"}
+   className="text-4xl font-semibold  text-center">{project.title}</motion.h3>
+        <motion.p className='text-center' variants={ContentAnimation} initial={"init"}
   animate={controls}
  >{project.description.short}</motion.p>
         <motion.span variants={ContentAnimation} initial={"init"}

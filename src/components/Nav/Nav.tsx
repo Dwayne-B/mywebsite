@@ -32,9 +32,9 @@ function Nav() {
     }}><a href="#contact">Contact</a></li>
     <li onClick={()=>{
       setOpen((prev)=>!prev)
-    }}>
-      {/* replace undefined with resume. add a plain text and creative version to download */}
-   <a href={'#'}> <NavSvg/></a>
+    }} className="text-center ">
+      {/* replace undefined with resume. add a plain text and creative version to download */} 
+   <a href={'#'} className=""> <NavSvg/></a>
  
     </li>
   </ul>

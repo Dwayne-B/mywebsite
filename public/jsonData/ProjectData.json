@@ -15,6 +15,54 @@
       "imgURL":"./public/webp-images/activi.png"
     },
     {
+      "title":"Age Calculator",
+      "description":{
+        "short":"Calculates the age of a person given a birthday",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/age-calc.png"
+    }, {
+      "title":"IP Address Tracker",
+      "description":{
+        "short":" IP Address Tracker app ",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/ip-address-tracker.png"
+    }, {
+      "title":"News Grid",
+      "description":{
+        "short":"Lading page for a news/blog website",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/news-grid.png"
+    }, {
+      "title":"Sunny Side Agency",
+      "description":{
+        "short":"Home page for a creative agency",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/sunnyside.png"
+    }, {
       "title":"Activi",
       "description":{
         "short":"activity suggetion app using the bored api",
@@ -25,7 +73,67 @@
       },
       "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
       "githubURL":"https://github.com/Dwayne-B/Activi",
-      "imgURL":"./public/webp-images/activi.png"
+      "imgURL":"./public/webp-images/age-calc.png"
+    }, {
+      "title":"Activi",
+      "description":{
+        "short":"activity suggetion app using the bored api",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/age-calc.png"
+    }, {
+      "title":"Activi",
+      "description":{
+        "short":"activity suggetion app using the bored api",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/age-calc.png"
+    }, {
+      "title":"Activi",
+      "description":{
+        "short":"activity suggetion app using the bored api",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/age-calc.png"
+    }, {
+      "title":"Activi",
+      "description":{
+        "short":"activity suggetion app using the bored api",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/age-calc.png"
+    }, {
+      "title":"Activi",
+      "description":{
+        "short":"activity suggetion app using the bored api",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/age-calc.png"
     }]
   }
   
