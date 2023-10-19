@@ -21,7 +21,7 @@ function CardOverlay({project,controls}) {
           scale:1,
         
           transition:{
-            delay:1,
+            delay:.4,
             type: "spring",
             stiffness: 260,
             damping: 20
@@ -30,7 +30,7 @@ function CardOverlay({project,controls}) {
       }
   
   return (
-    <motion.div variants={overlayAnimation}  animate={controls} initial={"init"}className='overlay p-5 flex flex-col justify-around items-center'>
+    <motion.div variants={overlayAnimation}  animate={controls} initial={"init"}className=' rounded-xl overlay p-5 flex flex-col justify-around items-center'>
         <motion.h3 variants={ContentAnimation} initial={"init"}
   animate={controls}
    className="text-4xl font-semibold">{project.title}</motion.h3>
