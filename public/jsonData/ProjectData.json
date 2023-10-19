@@ -1,0 +1,31 @@
+{
+  
+    "projects": [{
+      "tag":["front-end","react"],
+      "title":"Activi",
+      "description":{
+        "short":"activity suggetion app using the bored api",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back. This project provided hands on experiecne with state managment, asynconous functions and handling different types of user input.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/screencapture-deluxe-khapse-ff5e2d-netlify-app-2023-10-19-17_46_58.png"
+    },
+    {
+      "title":"Activi",
+      "description":{
+        "short":"activity suggetion app using the bored api",
+        "long":{
+          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "BuiltWith":["React","SASS"]
+        }
+      },
+      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "imgURL":"./public/webp-images/screencapture-deluxe-khapse-ff5e2d-netlify-app-2023-10-19-17_46_58.png"
+    }]
+  }
+  

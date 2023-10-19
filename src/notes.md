@@ -9,6 +9,11 @@
     - make html semantic
     - add arias where applicable
     -add a skills sections called technology toolbox
+    - add Nav animations
+    - add projects 
+    -create filtering functionality.
+ - hook up contact form properly
+    
 
 
 ## Questions and learned Things to write about:
@@ -16,9 +21,7 @@
     - Content Config for tailwind "tailwind.config.js" 
     - why I use Bem css naming convention and how to.
     - how to center absolute positioning elem
-
-
-
+   - how to expose network to develop on mobile 
 ### why doesnt this work - ReactSvg package and framer motion
 <!-- import Svg from '../../assets/bg-elements/DEV.svg'
 import {ReactSVG} from 'react-svg';

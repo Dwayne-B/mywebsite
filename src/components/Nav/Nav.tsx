@@ -16,7 +16,7 @@ function Nav() {
   const [isOpen, setOpen] = useState(false);
 	const [color, setColor] = useState("#fff");
   return (
-<nav  className='  z-[999] flex justify-between items-center px-5 py-6 w-full max-w-[1180px] fixed bg-[#14181d] '>
+<nav  className=' z-[999] flex justify-between items-center px-5 py-6 w-full max-w-[1180px] fixed bg-[#14181d] '>
 {isOpen ? (
 				<motion.div className=' 
         absolute right-0 top-0 bg-black h-screen w-80  py-40 flex flex-col items-center gap-5 z-[1] '>

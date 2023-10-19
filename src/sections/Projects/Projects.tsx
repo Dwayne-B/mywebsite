@@ -1,8 +1,23 @@
-
+import Card from '../../components/Card/Card'
+import { useEffect,useState } from 'react';
+// import '../../jsonData/ProjectData.json';
 function Projects() {
-    const Projects = [1,2,3,4,5,6];
+    const [projects,setProjects] = useState([]);
+    useEffect( ()=>{
+        const url = './jsonData/ProjectData.json';
+
+      const getJSON = async ()=>{
+       await fetch(url).then(data=>{
+        return data.json();
+       }).then((data)=>{
+            console.log(data.projects);
+        setProjects(data.projects);
+        })
+      }
+      getJSON();
+    },[])
   return (
-    <div id='projects' className='px-6 my-24'>
+    <div id='projects' className='section px-6 my-24'>
         <h2>Projects</h2>
         <span>
             <ul className='projects__filter-list flex gap-3'>
@@ -12,12 +27,10 @@ function Projects() {
             </ul>
         </span>
         <div className='flex flex-wrap justify-center gap-5 mt-8'>
-    {Projects.map((project, i )=>{
+    {projects.map((project, i )=>{
 
 
-return(<div key={i} className='w-[30%] min-w-[380px] max-w-[35%] h-96 bg-cyan-500'>
-    {"project " + project}
-</div>)
+return(<Card project={project} key={i}/>)
 
     })}
         </div>
