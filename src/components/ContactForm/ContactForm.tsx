@@ -32,9 +32,11 @@ function ContactForm() {
 					Name
 				</motion.label>
 				<input
+				className='p-3'
 					id='name'
 					name='name'
 					type='text'
+					placeholder='Dwayne Bynum'
 					onChange={formik.handleChange}
 					value={formik.values.name}
 				/>
@@ -43,10 +45,12 @@ function ContactForm() {
 				<motion.label
 					variants={ContactFormAnimation}
 					whileInView='show'
-					htmlFor='email'>
+					htmlFor='email' >
 					Email{' '}
 				</motion.label>
 				<input
+				placeholder='myname@email.com'
+					className='p-3'
 					id='email'
 					name='email'
 					type='email'
@@ -58,10 +62,12 @@ function ContactForm() {
 				<motion.label
 					variants={ContactFormAnimation}
 					whileInView='show'
-					htmlFor='msg'>
+					htmlFor='msg'
+					>
 					How can I help?
 				</motion.label>
 				<textarea
+				placeholder='I need a fast responsive website!'
 					id='msg'
 					name='msg'
 					style={{

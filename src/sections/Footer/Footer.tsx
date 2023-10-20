@@ -22,7 +22,7 @@ function Footer() {
 
 				<motion.a
 					target='_blank'
-					href='https://www.linkedin.com/in/dwayne-bynum-webdeveloper/'
+					href='https://www.linkedin.com/in/dwaynebynumdev/'
 					whileHover={{
 						rotate: 350,
 					}}>

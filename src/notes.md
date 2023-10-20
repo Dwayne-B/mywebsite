@@ -9,10 +9,7 @@
     - make html semantic
     - add arias where applicable
     -add a skills sections called technology toolbox
-    - add Nav animations
-    - add projects 
-    -create filtering functionality.
- - hook up contact form properly
+
     
 
 

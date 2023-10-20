@@ -9,7 +9,7 @@ import Footer from './sections/Footer/Footer'
 function App() {
 
   return (
-   <div className='text-white test'>
+   <div className='text-white container'>
     <Nav/>
     <Hero/>
     <About/>

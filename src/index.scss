@@ -6,20 +6,30 @@
 *, *::before,*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 100%;
 
 }
+
 
 #root{
   width: 100%;  
 }
+
 body {
+  
   max-width: 1180px;
   margin: auto;
   min-width: 320px;
   min-height: 100vh;
   background-color: #14181D;
   font-family: Montserrat, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+
 }
+
 h1{
   font-size:u.toRem(32);
 }
