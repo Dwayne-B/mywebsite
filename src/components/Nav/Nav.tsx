@@ -3,7 +3,7 @@ import NavSvg from "../NavSvg/NavSvg"
 import Hamburger from 'hamburger-react';
 import { useState } from 'react';
 import './Nav.scss'
-
+import resume from "../../assets/resume/Dwayne_Bynum_Resume.pdf"
 import { motion } from 'framer-motion';
 
 
@@ -31,13 +31,13 @@ function Nav() {
       setOpen((prev)=>!prev)
     }} className="text-center ">
       {/* replace undefined with resume. add a plain text and creative version to download */} 
-   <a href={'#'} className=""> <NavSvg/></a>
+   <a href={resume} download > <NavSvg/></a>
  
     </li>
   </ul>
 				</motion.div>
 			) : null}
-    <a href="#">
+    <a href={resume} download>
     <picture>
   <source srcSet={Logo} type='image/png' media="(min-width: 650px)" width={175} height={34} />
   <img src={Logo} alt="Dwayne B Logo" width={115} height={34}/>
