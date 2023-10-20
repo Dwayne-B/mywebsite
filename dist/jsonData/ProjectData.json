@@ -12,7 +12,7 @@
           }
         },
         "demoURL":"https://fancy-entremet-f0ec66.netlify.app/",
-        "githubURL":"https://github.com/Dwayne-B/Activi",
+        "githubURL":"https://github.com/Dwayne-B/cookbook",
         "imgURL":"./webp-images/cookbook.webp"
       },{
       "tag":"react",
@@ -38,8 +38,8 @@
           "BuiltWith":["React","SASS"]
         }
       },
-      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
-      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "demoURL":"https://inquisitive-granita-93ee84.netlify.app",
+      "githubURL":"https://github.com/Dwayne-B/FEM-age-calculator-app",
       "imgURL":"./webp-images/age-calc.webp"
     }, {
       "tag":"react",
@@ -51,8 +51,8 @@
           "BuiltWith":["React","SASS"]
         }
       },
-      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
-      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "demoURL":"https://rococo-khapse-a09639.netlify.app",
+      "githubURL":"https://github.com/Dwayne-B/ip-address-tracker",
       "imgURL":"./webp-images/ip-address-tracker.webp"
     }, {
       "tag":"vanilla",
@@ -64,8 +64,8 @@
           "BuiltWith":["React","SASS"]
         }
       },
-      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
-      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "demoURL":"https://timely-syrniki-cca143.netlify.app",
+      "githubURL":"https://github.com/Dwayne-B/FEM-news-homepage",
       "imgURL":"./webp-images/news-grid.webp"
     }, {
       "tag":"vanilla",
@@ -77,8 +77,8 @@
           "BuiltWith":["React","SASS"]
         }
       },
-      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
-      "githubURL":"https://github.com/Dwayne-B/Activi",
+      "demoURL":"https://admirable-tapioca-856bdb.netlify.app",
+      "githubURL":"https://github.com/Dwayne-B/FEM-sunnysideAgency",
       "imgURL":"./webp-images/sunnyside.webp"
     }]
   }

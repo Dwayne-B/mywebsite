@@ -57,7 +57,8 @@ function CardOverlay({project,controls}:CardOverlayProps) {
  >{project.description.short}</motion.p>
         <motion.span variants={ContentAnimation} initial={"init"}
   animate={controls}className='flex gap-4  w-full'>
-            <a href={project.demoURL}className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>Demo</a><a className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>Learn More</a>
+            <a href={project.demoURL} className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>Demo</a>
+            <a href={project.githubURL} className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>Learn More</a>
         </motion.span>
     </motion.div>
   )
