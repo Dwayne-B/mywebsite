@@ -86,18 +86,18 @@ function Projects() {
             <ul className='projects__filter-list flex gap-3'>
                 <li className={`tag ${tag==='All'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
 					
-							setTag(e.currentTarget.textContent);
+							setTag(e.currentTarget.textContent|| 'All');
 						}}><small>All</small></li>
                 <li className={`tag ${tag==='Vanilla'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
 							
-							setTag(e.currentTarget.textContent);
+							setTag(e.currentTarget.textContent|| 'All');
 						}}><small>Vanilla</small></li>
                 <li className={`tag ${tag==='React'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
 					
-							setTag(e.currentTarget.textContent);
+							setTag(e.currentTarget.textContent|| 'All');
 						}}><small>React</small></li>
                 <li className={`tag ${tag==='Vue'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
-							setTag(e.currentTarget.textContent);
+							setTag(e.currentTarget.textContent|| 'All');
 						}}><small>Vue</small></li>
 
             </ul>
