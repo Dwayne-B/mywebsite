@@ -1,14 +1,14 @@
-@use '../../SassUtil/index' as u;
+
 .Contact-form input{
 	color: rgb(33, 44, 40)
 }
 .Contact-form button {
 	align-self: center;
-	margin-top: u.toRem(30);
+	margin-top: 30rem;
 	width: 50%;
 }
 .Contact-form span {
-	margin-bottom: u.toRem(15);
+	margin-bottom: 15rem;
 	display: flex;
 	flex-direction: column;
 	label {
@@ -17,6 +17,6 @@
 		border-bottom: rgba(100, 226, 181, 0.7) solid;
 		width: fit-content;
 		text-align: start;
-		margin-bottom: u.toRem(10);
+		margin-bottom: 10rem;
 	}
 }
