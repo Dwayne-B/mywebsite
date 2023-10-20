@@ -13,7 +13,7 @@
         },
         "demoURL":"https://fancy-entremet-f0ec66.netlify.app/",
         "githubURL":"https://github.com/Dwayne-B/Activi",
-        "imgURL":"./public/webp-images/cookbook.webp"
+        "imgURL":"./webp-images/cookbook.webp"
       },{
       "tag":"react",
       "title":"Activi",
@@ -26,7 +26,7 @@
       },
       "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
       "githubURL":"https://github.com/Dwayne-B/Activi",
-      "imgURL":"./public/webp-images/activi.webp"
+      "imgURL":"./webp-images/activi.webp"
     },
     {
       "tag":"vanilla",
@@ -40,7 +40,7 @@
       },
       "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
       "githubURL":"https://github.com/Dwayne-B/Activi",
-      "imgURL":"./public/webp-images/age-calc.webp"
+      "imgURL":"./webp-images/age-calc.webp"
     }, {
       "tag":"react",
       "title":"IP Address Tracker",
@@ -53,7 +53,7 @@
       },
       "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
       "githubURL":"https://github.com/Dwayne-B/Activi",
-      "imgURL":"./public/webp-images/ip-address-tracker.webp"
+      "imgURL":"./webp-images/ip-address-tracker.webp"
     }, {
       "tag":"vanilla",
       "title":"News Grid",
@@ -66,7 +66,7 @@
       },
       "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
       "githubURL":"https://github.com/Dwayne-B/Activi",
-      "imgURL":"./public/webp-images/news-grid.webp"
+      "imgURL":"./webp-images/news-grid.webp"
     }, {
       "tag":"vanilla",
       "title":"Sunny Side Agency",
@@ -79,7 +79,7 @@
       },
       "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
       "githubURL":"https://github.com/Dwayne-B/Activi",
-      "imgURL":"./public/webp-images/sunnyside.webp"
+      "imgURL":"./webp-images/sunnyside.webp"
     }]
   }
   
