@@ -1,11 +1,9 @@
 # Todo:
-        - compress
-    - make html semantic
-    - add arias where applicable
+        - compress & resize Images 
     -add a skills sections called technology toolbox
     - add a vue project 
     -add an angular project
-    - fix typescipt errors
+  - add a modal onclick for learn more button on projects
 
     
 
@@ -40,4 +38,4 @@ function Hero() {
   )
 } -->
 
-export default Hero
+<!-- Why there was resolution conflicts when using sass utils @import ../../toRem as u custom function -->
