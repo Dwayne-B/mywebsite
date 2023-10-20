@@ -18,18 +18,18 @@ interface Project {
   imgURL: string;
 }
 
-function Card({project,i}: { project: Project; i: number }) {
+function Card({project}: { project: Project; key: number }) {
 
   const controls = useAnimationControls();
   return (
-    <div key={i} className=' card w-[30%] min-w-[380px] max-w-[35%] h-96 p-6 relative rounded-3xl'
+    <div  className=' card w-[30%] min-w-[380px] max-w-[35%] h-96 p-6 relative rounded-3xl'
     
 
     onMouseEnter={() => controls.start("visible")}
     onMouseLeave={() => controls.start("init")}
 >
   <img className='rounded-3xl' src={project.imgURL} alt="" style={{ position:"absolute", left:'0', top:'0',zIndex:'1'}} />
-    <CardOverlay project={project} controls={controls}/>
+    <CardOverlay project={project} controls={controls} />
 </div>
   )
 }

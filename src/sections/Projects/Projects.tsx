@@ -24,24 +24,31 @@ function Projects() {
   //create state to track Filter change
 	const [tag, setTag] = useState('All');
     useEffect( ()=>{
-        const url = './jsonData/ProjectData.json';
+      console.log(projects.length )
+     if(projects.length === 0){
+      console.log('Running..')
+      const url = './jsonData/ProjectData.json';
 
       const getJSON = async ()=>{
        await fetch(url).then(data=>{
         return data.json();
        }).then((data)=>{
-            console.log(data.projects);
+      
             setFilteredProjects(data.projects)
         setProjects(data.projects);
         })
       }
       getJSON();
-    },[]);
-    //Use Effect hook everytime a new filter is applied.
-    useEffect(() => {
+
+
+
+     }
+
       if (tag === 'All') {
+        console.log(tag);
         setFilteredProjects(projects);
       } else if (tag === 'Vanilla') {
+        console.log(tag);
         const VanillaProjects = projects.filter(
           (project:Project) => {
             return project.tag === 'vanilla';
@@ -70,7 +77,8 @@ function Projects() {
         );
         setFilteredProjects(vueProjects);
       }
-    }, [tag]);
+    },[projects, tag]);
+
   return (
     <div id='projects' className='section px-6 my-24'>
         <h2>Projects</h2>
@@ -78,18 +86,18 @@ function Projects() {
             <ul className='projects__filter-list flex gap-3'>
                 <li className={`tag ${tag==='All'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
 					
-							setTag(e.currentTarget.innerHTML);
+							setTag(e.currentTarget.textContent);
 						}}><small>All</small></li>
                 <li className={`tag ${tag==='Vanilla'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
 							
-							setTag(e.currentTarget.innerHTML);
+							setTag(e.currentTarget.textContent);
 						}}><small>Vanilla</small></li>
                 <li className={`tag ${tag==='React'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
-						
-							setTag(e.currentTarget.innerHTML);
+					
+							setTag(e.currentTarget.textContent);
 						}}><small>React</small></li>
                 <li className={`tag ${tag==='Vue'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
-							setTag(e.currentTarget.innerHTML);
+							setTag(e.currentTarget.textContent);
 						}}><small>Vue</small></li>
 
             </ul>
@@ -98,7 +106,7 @@ function Projects() {
     {filteredProjects.map((project, i )=>{
 
 
-return(<Card project={project} i={i}/>)
+return(<Card project={project} key={i}/>)
 
     })}
         </div>
