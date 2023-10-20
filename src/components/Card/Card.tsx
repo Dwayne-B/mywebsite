@@ -2,16 +2,24 @@ import './Card.scss'
 import { useAnimationControls } from "framer-motion";
 
 import CardOverlay from '../CardOverlay/CardOverlay'
-function Card({project,i}) {
-  const CardAnimation = {
-    init:{
-      x:0.8
-    },
-    visible:{
-      x:1,
-      
-    }
-  }
+
+interface Project {
+  tag: string;
+  title: string;
+  description: {
+    short: string;
+    long: {
+      why: string;
+      BuiltWith: string[];
+    };
+  };
+  demoURL: string;
+  githubURL: string;
+  imgURL: string;
+}
+
+function Card({project,i}: { project: Project; i: number }) {
+
   const controls = useAnimationControls();
   return (
     <div key={i} className=' card w-[30%] min-w-[380px] max-w-[35%] h-96 p-6 relative rounded-3xl'

@@ -8,10 +8,7 @@ import { motion } from 'framer-motion';
 
 
 
-const NavAnimations = {
-  hover: { opacity: 1 },
-  clicked: { color: '#34725d' },
-};
+
 function Nav() {
   const [isOpen, setOpen] = useState(false);
 	const [color, setColor] = useState("#fff");

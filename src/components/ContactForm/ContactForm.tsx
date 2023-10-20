@@ -1,11 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useForm } from '@formspree/react';
 import { motion } from 'framer-motion';
 import { useFormik } from 'formik';
 import './ContactForm.scss';
+
 function ContactForm() {
 	const formik = useFormik({
 		initialValues: { name: '', email: '', msg: '' },
-		onSubmit: (values) => {
+		onSubmit: (_values) => {
 			useForm('Contact-form');
 		},
 	});

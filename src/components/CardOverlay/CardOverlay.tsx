@@ -1,6 +1,24 @@
 import'./CardOverlay.scss'
-import {motion } from "framer-motion"
-function CardOverlay({project,controls}) {
+import {motion,AnimationControls } from "framer-motion"
+interface Project {
+  tag: string;
+  title: string;
+  description: {
+    short: string;
+    long: {
+      why: string;
+      BuiltWith: string[];
+    };
+  };
+  demoURL: string;
+  githubURL: string;
+  imgURL: string;
+}
+interface CardOverlayProps {
+  project: Project;
+  controls: AnimationControls; // Define controls as a prop
+}
+function CardOverlay({project,controls}:CardOverlayProps) {
     const overlayAnimation = {
         init:{
           opacity:0,
