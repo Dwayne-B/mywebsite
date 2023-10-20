@@ -1,6 +1,6 @@
 import AboutImg from '../../assets/about-images/about-img.png'
 function About() {
-  return <div id='about' className="section flex flex-col lg:flex-row gap-14  items-center ">
+  return <div id='about' className="section flex flex-col lg:flex-row gap-14  items-center container ">
   <article className="flex flex-col gap-8 justify-center items-center text-center lg:text-left flex-1 ">
   <h2 className='lg:self-start
   '>Why Me?</h2>

@@ -10,16 +10,8 @@ function Footer() {
 				<a href='#projects'>Projects</a>
 				<a href='#contact'>Contact</a>
 			</div>
-			<div className=' flex   gap-11  '>
-				<motion.a
-					target='_blank'
-					href='https://www.freecodecamp.org/DwayneB435'
-					whileHover={{
-						rotate: 350,
-					}}>
-					
-				</motion.a>
-
+			<div className=' flex  gap-11'>
+			
 				<motion.a
 					target='_blank'
 					href='https://www.linkedin.com/in/dwaynebynumdev/'
