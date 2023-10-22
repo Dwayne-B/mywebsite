@@ -2,10 +2,8 @@
   - compress & resize Images 
     --> move imgs to figma and resize --> convert back to webp --> compress
         --> add back into public folder.
-  - add a skills sections called technology toolbox
   - add a vue project 
   - add an angular project
-  - add a modal onclick for learn more button on projects
   - add google analytics??
 # AFTER TODO:
 [] APPLY APPLY APPLY APPLY APPLY APPLY!
