@@ -6,14 +6,17 @@ import './Nav.scss'
 import resume from "../../assets/resume/Dwayne_Bynum_Resume.pdf"
 import { motion } from 'framer-motion';
 
+interface NavProps {
 
+  modalIsOpen: boolean;
 
+}
 
-function Nav() {
+function Nav({modalIsOpen}:NavProps) {
   const [isOpen, setOpen] = useState(false);
 	const [color, setColor] = useState("#fff");
   return (
-<nav  className=' z-[999] flex justify-between items-center  px-10 py-6 w-full  fixed bg-[#14181d] left-0 '>
+<nav  className={` ${modalIsOpen?'z-[3]':'z-[999]'} flex justify-between items-center  px-10 py-6 w-full  fixed bg-[#14181d] left-0 `}>
 {isOpen ? (
 				<motion.div className=' 
         absolute right-0 top-0 bg-black h-screen w-80  py-40 flex flex-col items-center gap-5 z-[1] '>

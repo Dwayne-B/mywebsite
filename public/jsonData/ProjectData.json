@@ -2,13 +2,14 @@
   
     "projects": [
       {
+      
         "tag":"fullstack",
         "title":"CookBook",
         "description":{
           "short":"Full-Stack CRUD app to find your favorite recipes",
           "long":{
             "why":"Cookbook is a full stack MERN application that allows users to search for recipes and perform CRUD operations on the saved recipes.Users can also create their own recipe cards.",
-            "BuiltWith":["React","SASS"]
+            "BuiltWith":["./tech-icons/react.webp","./tech-icons/sass.webp","./tech-icons/tailwind.webp","./tech-icons/ts.webp","./tech-icons/node.webp","./tech-icons/express.webp","./tech-icons/mongodb.webp","./tech-icons/figma.webp","./tech-icons/netlify.webp"]
           }
         },
         "demoURL":"https://fancy-entremet-f0ec66.netlify.app/",
@@ -21,7 +22,7 @@
         "short":"activity suggetion app using the bored api",
         "long":{
           "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back. This project provided hands on experiecne with state managment, asynconous functions and handling different types of user input.",
-          "BuiltWith":["React","SASS"]
+          "BuiltWith":["./tech-icons/react.webp","./tech-icons/sass.webp"]
         }
       },
       "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
@@ -35,7 +36,7 @@
         "short":"Calculates the age of a person given a birthday",
         "long":{
           "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
-          "BuiltWith":["React","SASS"]
+          "BuiltWith":["./tech-icons/html.webp","./tech-icons/css.webp","./tech-icons/js.webp"]
         }
       },
       "demoURL":"https://inquisitive-granita-93ee84.netlify.app",
@@ -48,7 +49,7 @@
         "short":" IP Address Tracker app ",
         "long":{
           "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
-          "BuiltWith":["React","SASS"]
+          "BuiltWith":["./tech-icons/react.webp","./tech-icons/css.webp"]
         }
       },
       "demoURL":"https://rococo-khapse-a09639.netlify.app",
@@ -61,7 +62,7 @@
         "short":"Lading page for a news/blog website",
         "long":{
           "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
-          "BuiltWith":["React","SASS"]
+          "BuiltWith":["./tech-icons/html.webp","./tech-icons/css.webp","./tech-icons/js.webp"]
         }
       },
       "demoURL":"https://timely-syrniki-cca143.netlify.app",
@@ -74,7 +75,7 @@
         "short":"Home page for a creative agency",
         "long":{
           "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
-          "BuiltWith":["React","SASS"]
+          "BuiltWith":["./tech-icons/html.webp","./tech-icons/css.webp","./tech-icons/js.webp"]
         }
       },
       "demoURL":"https://admirable-tapioca-856bdb.netlify.app",

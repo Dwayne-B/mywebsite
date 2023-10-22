@@ -17,8 +17,13 @@ interface Project {
   githubURL: string;
   imgURL: string;
 }
+interface ModalProps {
+  setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  modalIsOpen: boolean;
+  project:Project;
 
-function Card({project}: { project: Project; key: number }) {
+}
+function Card({modalIsOpen,setModalIsOpen,project}:ModalProps) {
 
   const controls = useAnimationControls();
   return (
@@ -29,7 +34,7 @@ function Card({project}: { project: Project; key: number }) {
     onMouseLeave={() => controls.start("init")}
 >
   <img className='rounded-3xl' src={project.imgURL} alt="" style={{ position:"absolute", left:'0', top:'0',zIndex:'1'}} />
-    <CardOverlay project={project} controls={controls} />
+    <CardOverlay modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} project={project} controls={controls} />
 </div>
   )
 }

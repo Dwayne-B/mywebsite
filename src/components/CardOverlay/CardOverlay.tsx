@@ -1,4 +1,6 @@
 import'./CardOverlay.scss'
+import Modal from '../Modal/Modal'
+
 import {motion,AnimationControls } from "framer-motion"
 interface Project {
   tag: string;
@@ -17,8 +19,11 @@ interface Project {
 interface CardOverlayProps {
   project: Project;
   controls: AnimationControls; // Define controls as a prop
+  setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  modalIsOpen:boolean;
+  key:number
 }
-function CardOverlay({project,controls}:CardOverlayProps) {
+function CardOverlay({modalIsOpen,setModalIsOpen,project,controls,key}:CardOverlayProps) {
     const overlayAnimation = {
         init:{
           opacity:0,
@@ -46,7 +51,8 @@ function CardOverlay({project,controls}:CardOverlayProps) {
           }
         }
       }
-  
+
+
   return (
     <motion.div variants={overlayAnimation}  animate={controls} initial={"init"}className=' rounded-xl overlay p-5 flex flex-col justify-around items-center'>
         <motion.h3 variants={ContentAnimation} initial={"init"}
@@ -58,8 +64,15 @@ function CardOverlay({project,controls}:CardOverlayProps) {
         <motion.span variants={ContentAnimation} initial={"init"}
   animate={controls}className='flex gap-4  w-full'>
             <a href={project.demoURL} className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>Demo</a>
-            <a href={project.githubURL} className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>Learn More</a>
+            <button className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center' onClick={()=>{
+              setModalIsOpen(prev=>!prev);
+            }}>Learn More</button>
         </motion.span>
+        {/* TOGGLE MODAL COMPONENT 
+        
+        
+        */}
+        {modalIsOpen? <Modal project={project} setModalIsOpen={setModalIsOpen}/>:null}
     </motion.div>
   )
 }

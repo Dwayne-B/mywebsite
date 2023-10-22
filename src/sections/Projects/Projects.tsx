@@ -16,7 +16,12 @@ interface Project {
   githubURL: string;
   imgURL: string;
 }
-function Projects() {
+interface ModalProps {
+  setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  modalIsOpen: boolean;
+
+}
+function Projects({modalIsOpen,setModalIsOpen}:ModalProps) {
     const [projects,setProjects] = useState([]);
     // create filter state whihc will be an array of projects filtered by tagName
 	const [filteredProjects, setFilteredProjects] =
@@ -102,11 +107,11 @@ function Projects() {
 
             </ul>
         </span>
-        <div className='flex flex-wrap justify-center gap-5 mt-8'>
+        <div className='flex flex-wrap justify-center gap-24 mt-8'>
     {filteredProjects.map((project, i )=>{
 
 
-return(<Card project={project} key={i}/>)
+return(<Card modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} project={project} key={i}/>)
 
     })}
         </div>
