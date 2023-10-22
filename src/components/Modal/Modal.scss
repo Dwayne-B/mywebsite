@@ -12,12 +12,13 @@
   }
   .modal-body-tech ul{
     gap: 1.25rem;
+ 
   }
   .modal-body-tech img{
-   
-   
-    height: 1.75rem;
-    object-fit: cover;
+  
+    width: 3rem;
+ 
+    object-fit: contain;
     object-position: center;
   }
     

@@ -26,7 +26,7 @@ function Modal({setModalIsOpen,project}:ModalProps) {
     init:{
       scale:0,
       transition:{
-        direction:"reverse"
+        type: "spring"
       }
     },
     show:{
@@ -35,7 +35,7 @@ function Modal({setModalIsOpen,project}:ModalProps) {
   }
   return (
     <motion.div variants={modalAnimation}
-    initial='init' animate='show'  className="modal  w-[30rem] absolute mt-10  px-5 py-5 flex justify-between flex-col overflow-y-visible ">
+    initial='init' animate='show'  className="modal  max-w-[380px] max-h-screen   absolute mt-10  px-5 py-5 flex justify-between flex-col overflow-y-visible ">
     
     <button className=' self-end mb-5' onClick={()=>{
       setModalIsOpen((prev)=>!prev)
