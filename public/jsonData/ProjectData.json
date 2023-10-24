@@ -35,7 +35,7 @@
       "description":{
         "short":"Calculates the age of a person given a birthday",
         "long":{
-          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "why":"Back to basics! Nothing but HTML CSS and Javascript bundled with Parcel to produce an app that takes in a date and returns the time elapsed since. Leveraging the date-fns npm module to easily work with the Date object.",
           "BuiltWith":["./tech-icons/html.webp","./tech-icons/css.webp","./tech-icons/js.webp"]
         }
       },
@@ -48,7 +48,7 @@
       "description":{
         "short":" IP Address Tracker app ",
         "long":{
-          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "why":" Utilizing the geo.ipify API and LeafletJS this app will take in an IP address and return detailed information about the location,timezone,and internet Service Provider.",
           "BuiltWith":["./tech-icons/react.webp","./tech-icons/css.webp"]
         }
       },
@@ -61,7 +61,7 @@
       "description":{
         "short":"Lading page for a news/blog website",
         "long":{
-          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "why":"CSS Grid is a great tool for creating complex flexible layouts. My goal was to solidify my use of grid by building a classic responsive grid layout.",
           "BuiltWith":["./tech-icons/html.webp","./tech-icons/css.webp","./tech-icons/js.webp"]
         }
       },
@@ -74,7 +74,7 @@
       "description":{
         "short":"Home page for a creative agency",
         "long":{
-          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back.",
+          "why":"Bright, creative, and eye-catching are the words that come to mind when creating this homepage, making it suitable for any agency aiming to capture the viewer's attention while maintaining a user-friendly design. ",
           "BuiltWith":["./tech-icons/html.webp","./tech-icons/css.webp","./tech-icons/js.webp"]
         }
       },
