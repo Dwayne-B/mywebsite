@@ -26,6 +26,8 @@ function Projects({modalIsOpen,setModalIsOpen}:ModalProps) {
     // create filter state whihc will be an array of projects filtered by tagName
 	const [filteredProjects, setFilteredProjects] =
   useState([]);
+  // const selectedCard 
+  const [selectedCard,setSelectedCard] = useState('');
   //create state to track Filter change
 	const [tag, setTag] = useState('All');
     useEffect( ()=>{
@@ -111,7 +113,7 @@ function Projects({modalIsOpen,setModalIsOpen}:ModalProps) {
     {filteredProjects.map((project, i )=>{
 
 
-return(<Card modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} project={project} key={i}/>)
+return(<Card key={i} selectedCard={selectedCard} setSelectedCard={setSelectedCard} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} project={project} cardId={i}/>)
 
     })}
         </div>

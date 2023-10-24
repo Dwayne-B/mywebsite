@@ -21,9 +21,11 @@ interface CardOverlayProps {
   controls: AnimationControls; // Define controls as a prop
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   modalIsOpen:boolean;
-  key:number
+  cardId:number;
+  selectedCard:string;
+  setSelectedCard:React.Dispatch<React.SetStateAction<string>>;
 }
-function CardOverlay({modalIsOpen,setModalIsOpen,project,controls,key}:CardOverlayProps) {
+function CardOverlay({modalIsOpen,setModalIsOpen,project,controls,cardId,selectedCard,setSelectedCard}:CardOverlayProps) {
     const overlayAnimation = {
         init:{
           opacity:0,
@@ -64,7 +66,9 @@ function CardOverlay({modalIsOpen,setModalIsOpen,project,controls,key}:CardOverl
         <motion.span variants={ContentAnimation} initial={"init"}
   animate={controls}className='flex gap-4  w-full'>
             <a href={project.demoURL} className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>Demo</a>
-            <button className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center' onClick={()=>{
+            <button id={`${cardId}`}className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center' onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
+              setSelectedCard(e.currentTarget.getAttribute('id') ||'')
+           
               setModalIsOpen(prev=>!prev);
             }}>Learn More</button>
         </motion.span>
@@ -72,7 +76,7 @@ function CardOverlay({modalIsOpen,setModalIsOpen,project,controls,key}:CardOverl
         
         
         */}
-        {modalIsOpen? <Modal project={project} setModalIsOpen={setModalIsOpen}/>:null}
+        {modalIsOpen && selectedCard === cardId.toString() ? <Modal project={project} setModalIsOpen={setModalIsOpen} setSelectedCard={setSelectedCard} selectedCard={selectedCard}/>:null}
     </motion.div>
   )
 }

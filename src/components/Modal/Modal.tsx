@@ -20,8 +20,10 @@ interface Project {
 interface ModalProps {
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   project:Project;
+  setSelectedCard: React.Dispatch<React.SetStateAction<string>>;
+  selectedCard: string;
 }
-function Modal({setModalIsOpen,project}:ModalProps) {
+function Modal({setModalIsOpen,project,selectedCard}:ModalProps) {
   const modalAnimation ={
     init:{
       scale:0,
@@ -33,7 +35,11 @@ function Modal({setModalIsOpen,project}:ModalProps) {
       scale:1
     }
   }
+  if (!selectedCard) {
+    return null; // Do not render the modal if no project is selected
+  }
   return (
+    
     <motion.div variants={modalAnimation}
     initial='init' animate='show'  className="modal  max-w-[380px] max-h-screen   absolute mt-10  px-5 py-5 flex justify-between flex-col overflow-y-visible ">
     

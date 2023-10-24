@@ -21,9 +21,12 @@ interface ModalProps {
   setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   modalIsOpen: boolean;
   project:Project;
+  selectedCard:string;
+  setSelectedCard:React.Dispatch<React.SetStateAction<string>>;
+  cardId:number;
 
 }
-function Card({modalIsOpen,setModalIsOpen,project}:ModalProps) {
+function Card({modalIsOpen,setModalIsOpen,project,selectedCard,setSelectedCard,cardId}:ModalProps) {
 
   const controls = useAnimationControls();
   return (
@@ -34,7 +37,7 @@ function Card({modalIsOpen,setModalIsOpen,project}:ModalProps) {
     onMouseLeave={() => controls.start("init")}
 >
   <img className='rounded-3xl' src={project.imgURL} alt="" style={{ position:"absolute", left:'0', top:'0',zIndex:'1'}} />
-    <CardOverlay modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} project={project} controls={controls} />
+    <CardOverlay cardId={cardId} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} project={project} controls={controls} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
 </div>
   )
 }
