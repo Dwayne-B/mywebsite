@@ -1,4 +1,4 @@
-import{useState,useEffect} from 'react'
+import{useState} from 'react'
 import './App.scss'
 import Nav from './components/Nav/Nav'
 import Hero from './sections/Hero/Hero'
