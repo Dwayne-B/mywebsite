@@ -114,7 +114,7 @@
       "description":{
         "short":" Expense Tracker app ",
         "long":{
-          "why":" I wanted to build on top of an application to add my own functionality. I added fucntionality which double checks if a user wants to really delete a particular expense from the budget.",
+          "why":" Users can add and delete expenses while seeing the total income and total expenses. Data persists using local storage. ",
           "BuiltWith":["./tech-icons/vue.webp","./tech-icons/css.webp"]
         }
       },
