@@ -1,5 +1,5 @@
 import './Card.scss'
-import { useAnimationControls } from "framer-motion";
+import {motion, useAnimationControls } from "framer-motion";
 
 import CardOverlay from '../CardOverlay/CardOverlay'
 
@@ -29,16 +29,29 @@ interface ModalProps {
 function Card({modalIsOpen,setModalIsOpen,project,selectedCard,setSelectedCard,cardId}:ModalProps) {
 
   const controls = useAnimationControls();
+  const imgAnimation = {
+    lg:{
+      scale:1,
+          },
+    small:{
+      scale:.25,
+      
+      
+    }
+  }
   return (
-    <div  className=' card w-[30%] min-w-[380px] max-w-[35%] h-96 p-6 relative rounded-3xl'
+    <motion.div  className=' card w-[30%] min-w-[380px] max-w-[35%] h-96 p-6 relative rounded-3xl'
+    
     
 
-    onMouseEnter={() => controls.start("visible")}
-    onMouseLeave={() => controls.start("init")}
+    onMouseEnter={() => {controls.start("small").then(()=>{return controls.start("visible")});}}
+    onMouseLeave={() => controls.start("lg").then(()=>{return controls.start("init")})}
 >
-  <img className='rounded-3xl' src={project.imgURL} alt="" style={{ position:"absolute", left:'0', top:'0',zIndex:'1'}} />
+  <motion.img 
+  variants={imgAnimation} animate={controls} initial={"init"}
+  className='rounded-3xl' src={project.imgURL} alt="" style={{ position:"absolute", left:'0', top:'0',zIndex:'1'}} />
     <CardOverlay cardId={cardId} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} project={project} controls={controls} selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
-</div>
+</motion.div>
   )
 }
 

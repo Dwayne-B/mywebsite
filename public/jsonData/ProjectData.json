@@ -81,6 +81,51 @@
       "demoURL":"https://admirable-tapioca-856bdb.netlify.app",
       "githubURL":"https://github.com/Dwayne-B/FEM-sunnysideAgency",
       "imgURL":"./webp-images/sunnyside.webp"
-    }]
+    },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    {
+      "tag":"vue",
+      "title":"Base Apparel",
+      "description":{
+        "short":" Landing page for a new clothing brand ",
+        "long":{
+          "why":"A clean designa and easy layout for this landing page built with vue which made it easy to build quickly.",
+          "BuiltWith":["./tech-icons/vue.webp","./tech-icons/css.webp"]
+        }
+      },
+      "demoURL":"https://scintillating-donut-87a658.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/FEM-BaseApparel",
+      "imgURL":"./webp-images/base.webp"
+    }
+  
+  ,
+  
+    {
+      "tag":"vue",
+      "title":"Expense Traker",
+      "description":{
+        "short":" Expense Tracker app ",
+        "long":{
+          "why":" I wanted to build on top of an application to add my own functionality. I added fucntionality which double checks if a user wants to really delete a particular expense from the budget.",
+          "BuiltWith":["./tech-icons/vue.webp","./tech-icons/css.webp"]
+        }
+      },
+      "demoURL":"https://658284c029a78935c252527c--steady-scone-b0b8a9.netlify.app/",
+      "githubURL":"https://github.com/Dwayne-B/expense-tracker",
+      "imgURL":"./webp-images/expense-tracker.webp"
+    }
+  
+  
+  
+  
+  ]
   }
   
