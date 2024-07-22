@@ -54,14 +54,14 @@ function Projects({modalIsOpen,setModalIsOpen}:ModalProps) {
       if (tag === 'All') {
         console.log(tag);
         setFilteredProjects(projects);
-      } else if (tag === 'Vanilla') {
+      } else if (tag === 'JavaScript') {
         console.log(tag);
-        const VanillaProjects = projects.filter(
+        const javascriptProjects = projects.filter(
           (project:Project) => {
-            return project.tag === 'vanilla';
+            return project.tag === 'JavaScript';
           },
         );
-        setFilteredProjects(VanillaProjects);
+        setFilteredProjects(javascriptProjects);
       } else if (tag === 'Fullstack') {
         const fullStackProjects = projects.filter(
           (project:Project) => {
@@ -87,7 +87,7 @@ function Projects({modalIsOpen,setModalIsOpen}:ModalProps) {
     },[projects, tag]);
 
   return (
-    <div id='projects' className='section px-6 my-24'>
+    <div id='projects' className='section  my-24'>
         <h2>Projects</h2>
         <span>
             <ul className='projects__filter-list flex gap-3'>
@@ -95,10 +95,10 @@ function Projects({modalIsOpen,setModalIsOpen}:ModalProps) {
 					
 							setTag(e.currentTarget.textContent|| 'All');
 						}}><small>All</small></li>
-                <li className={`tag ${tag==='Vanilla'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
+                <li className={`tag ${tag ==='JavaScript'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
 							
 							setTag(e.currentTarget.textContent|| 'All');
-						}}><small>Vanilla</small></li>
+						}}><small>JavaScript</small></li>
                 <li className={`tag ${tag==='React'?'tag-selected':''}`} onClick={(e: React.MouseEvent<HTMLLIElement>) => {
 					
 							setTag(e.currentTarget.textContent|| 'All');

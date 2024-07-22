@@ -1,21 +1,7 @@
 {
   
     "projects": [
-      {
-      
-        "tag":"fullstack",
-        "title":"CookBook",
-        "description":{
-          "short":"Full-Stack CRUD app to find your favorite recipes",
-          "long":{
-            "why":"Cookbook is a full stack MERN application that allows users to search for recipes and perform CRUD operations on the saved recipes.Users can also create their own recipe cards.",
-            "BuiltWith":["./tech-icons/react.webp","./tech-icons/sass.webp","./tech-icons/tailwind.webp","./tech-icons/ts.webp","./tech-icons/node.webp","./tech-icons/express.webp","./tech-icons/mongodb.webp","./tech-icons/figma.webp","./tech-icons/netlify.webp"]
-          }
-        },
-        "demoURL":"https://fancy-entremet-f0ec66.netlify.app/",
-        "githubURL":"https://github.com/Dwayne-B/cookbook",
-        "imgURL":"./webp-images/cookbook.webp"
-      },{
+     {
       "tag":"react",
       "title":"Activi",
       "description":{
@@ -30,12 +16,12 @@
       "imgURL":"./webp-images/activi.webp"
     },
     {
-      "tag":"vanilla",
+      "tag":"JavaScript",
       "title":"Age Calculator",
       "description":{
         "short":"Calculates the age of a person given a birthday",
         "long":{
-          "why":"Back to basics! Nothing but HTML CSS and Javascript bundled with Parcel to produce an app that takes in a date and returns the time elapsed since. Leveraging the date-fns npm module to easily work with the Date object.",
+          "why":"Back to basics! Nothing but HTML CSS and JavaScript bundled with Parcel to produce an app that takes in a date and returns the time elapsed since. Leveraging the date-fns npm module to easily work with the Date object.",
           "BuiltWith":["./tech-icons/html.webp","./tech-icons/css.webp","./tech-icons/js.webp"]
         }
       },
@@ -56,7 +42,7 @@
       "githubURL":"https://github.com/Dwayne-B/ip-address-tracker",
       "imgURL":"./webp-images/ip-address-tracker.webp"
     }, {
-      "tag":"vanilla",
+      "tag":"JavaScript",
       "title":"News Grid",
       "description":{
         "short":"Lading page for a news/blog website",
@@ -69,7 +55,7 @@
       "githubURL":"https://github.com/Dwayne-B/FEM-news-homepage",
       "imgURL":"./webp-images/news-grid.webp"
     }, {
-      "tag":"vanilla",
+      "tag":"JavaScript",
       "title":"Sunny Side Agency",
       "description":{
         "short":"Home page for a creative agency",
