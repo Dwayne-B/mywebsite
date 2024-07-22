@@ -69,7 +69,7 @@ function Nav({modalIsOpen}:NavProps) {
 				color={color}
         onToggle={()=>{
           setColor((prev)=>{
-            prev='#6fe7b7';
+            prev=isOpen?'#fff':'#6fe7b7';
           return prev})
         }}
 				toggled={isOpen}
