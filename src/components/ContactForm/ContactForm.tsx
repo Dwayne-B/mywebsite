@@ -39,7 +39,7 @@ function ContactForm() {
 					id='name'
 					name='name'
 					type='text'
-					placeholder='Dwayne Bynum'
+					placeholder='Dwayne B'
 					onChange={formik.handleChange}
 					value={formik.values.name}
 				/>

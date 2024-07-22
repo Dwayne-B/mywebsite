@@ -1,20 +1,7 @@
 {
   
     "projects": [
-     {
-      "tag":"react",
-      "title":"Activi",
-      "description":{
-        "short":"activity suggetion app using the bored api",
-        "long":{
-          "why":"I wanted to build a multi-stage form that takes in a bunch of user information interacts with an API and sends meaningful content back. This project provided hands on experiecne with state managment, asynconous functions and handling different types of user input.",
-          "BuiltWith":["./tech-icons/react.webp","./tech-icons/sass.webp"]
-        }
-      },
-      "demoURL":"https://deluxe-khapse-ff5e2d.netlify.app/",
-      "githubURL":"https://github.com/Dwayne-B/Activi",
-      "imgURL":"./webp-images/activi.webp"
-    },
+   
     {
       "tag":"JavaScript",
       "title":"Age Calculator",

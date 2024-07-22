@@ -1,6 +1,6 @@
 import AboutImg from '../../assets/about-images/about-img.png'
 function About() {
-  return <div id='about' className=" section flex flex-col mdk:flex-row gap-14  items-center container ">
+  return <div id='about' className=" section flex flex-col md:flex-row gap-14  items-center container ">
   <article className="flex flex-col gap-8 justify-center  lg:text-left flex-1 ">
   <h2 className='lg:self-start
   '>
@@ -11,7 +11,7 @@ function About() {
 
 
   </h2>
-    <p className='px-3'> I'm an<span className='text--highlight'> independent creative developer </span> I build 
+    <p className='px-3 '> I'm an<span className='text--highlight'> independent creative developer </span> I build 
       <span style={{color:'#757171'}}> (and occassionally design) </span>
       products for the web and mobile world!</p>
     <div className='flex md:gap-16 gap-6 '>
