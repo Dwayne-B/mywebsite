@@ -12,8 +12,8 @@ function HeroSvg() {
         },
         visible: {
           opacity:1,
-          scale:.8,
-        
+          scale:.3,
+          y:-15,
           pathLength: 1,
           transition:{
             duration:2,
