@@ -1,10 +1,9 @@
-import AboutImg from "../../assets/about-images/about-img.png";
 function About() {
 	return (
 		<div
 			id='about'
 			className=' section flex flex-col md:flex-row gap-14  items-center  '>
-			<article className='flex flex-col gap-8 justify-center  lg:text-left flex-1 w-full '>
+			<article className='flex flex-col gap-8 justify-center lg:text-left flex-1 w-full '>
 				<h2
 					className='lg:self-start
   '>
@@ -39,7 +38,7 @@ function About() {
 					</a>
 				</div>
 			</article>
-			<picture className=''>
+			{/* <picture className=''>
 				<source
 					type='image/png'
 					srcSet={AboutImg}
@@ -48,9 +47,21 @@ function About() {
 					src={AboutImg}
 					alt='glasses sitting on keyboard with a monitor displaying code'
 				/>
-			</picture>
+			</picture> */}
+			{/* spline*/}
+			<SplineElm />
 		</div>
 	);
 }
 
 export default About;
+import Spline from "@splinetool/react-spline";
+//
+// https://prod.spline.design/S9dvttkMTwGjuw7V/scene.splinecode
+function SplineElm() {
+	return (
+		<div className=' flex-1 w-[50%]   '>
+			<Spline scene='https://draft.spline.design/FN9vZ943WsM3cbue/scene.splinecode' />
+		</div>
+	);
+}
