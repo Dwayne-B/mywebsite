@@ -56,12 +56,12 @@ function About() {
 
 export default About;
 import Spline from "@splinetool/react-spline";
+//https://draft.spline.design/FN9vZ943WsM3cbue/scene.splinecode
 //
-// https://prod.spline.design/S9dvttkMTwGjuw7V/scene.splinecode
 function SplineElm() {
 	return (
-		<div className=' flex-1 w-[50%]   '>
-			<Spline scene='https://draft.spline.design/FN9vZ943WsM3cbue/scene.splinecode' />
+		<div className=' flex-1   border-'>
+			<Spline scene='https://draft.spline.design/D-qZlsv7lammhgKC/scene.splinecode' />
 		</div>
 	);
 }
