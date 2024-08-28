@@ -2,7 +2,7 @@ function About() {
 	return (
 		<div
 			id='about'
-			className=' section flex flex-col md:flex-row gap-14  items-center  '>
+			className='overflow-hidden section flex flex-col md:flex-row gap-14  items-center  '>
 			<article className='flex flex-col gap-8 justify-center lg:text-left flex-1 w-full '>
 				<h2
 					className='lg:self-start
@@ -56,12 +56,14 @@ function About() {
 
 export default About;
 import Spline from "@splinetool/react-spline";
-//https://draft.spline.design/FN9vZ943WsM3cbue/scene.splinecode
-//
+
+//https://prod.spline.design/S9dvttkMTwGjuw7V/scene.splinecode good 1
 function SplineElm() {
 	return (
-		<div className=' flex-1   border-'>
-			<Spline scene='https://draft.spline.design/D-qZlsv7lammhgKC/scene.splinecode' />
+		<div className=' flex-1  '>
+			<Spline scene='https://prod.spline.design/S9dvttkMTwGjuw7V/scene.splinecode' />
 		</div>
 	);
 }
+
+//
