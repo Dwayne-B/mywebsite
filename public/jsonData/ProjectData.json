@@ -1,0 +1,102 @@
+{
+	"projects": [
+		{
+			"tag": "JavaScript",
+			"title": "Age Calculator",
+			"description": {
+				"short": "Calculates the age of a person given a birthday",
+				"long": {
+					"why": "Back to basics! Nothing but HTML CSS and JavaScript bundled with Parcel to produce an app that takes in a date and returns the time elapsed since. Leveraging the date-fns npm module to easily work with the Date object.",
+					"BuiltWith": [
+						"/tech-icons/html.webp",
+						"/tech-icons/css.webp",
+						"/tech-icons/js.webp"
+					]
+				}
+			},
+			"demoURL": "https://inquisitive-granita-93ee84.netlify.app",
+			"githubURL": "https://github.com/Dwayne-B/FEM-age-calculator-app",
+			"imgURL": "/webp-images/age-calc.webp"
+		},
+		{
+			"tag": "react",
+			"title": "IP Address Tracker",
+			"description": {
+				"short": " IP Address Tracker app ",
+				"long": {
+					"why": " Utilizing the geo.ipify API and LeafletJS this app will take in an IP address and return detailed information about the location,timezone,and internet Service Provider.",
+					"BuiltWith": ["/tech-icons/react.webp", "/tech-icons/css.webp"]
+				}
+			},
+			"demoURL": "https://rococo-khapse-a09639.netlify.app",
+			"githubURL": "https://github.com/Dwayne-B/ip-address-tracker",
+			"imgURL": "/webp-images/ip-address-tracker.webp"
+		},
+		{
+			"tag": "JavaScript",
+			"title": "News Grid",
+			"description": {
+				"short": "Lading page for a news/blog website",
+				"long": {
+					"why": "CSS Grid is a great tool for creating complex flexible layouts. My goal was to solidify my use of grid by building a classic responsive grid layout.",
+					"BuiltWith": [
+						"/tech-icons/html.webp",
+						"/tech-icons/css.webp",
+						"/tech-icons/js.webp"
+					]
+				}
+			},
+			"demoURL": "https://timely-syrniki-cca143.netlify.app",
+			"githubURL": "https://github.com/Dwayne-B/FEM-news-homepage",
+			"imgURL": "/webp-images/news-grid.webp"
+		},
+		{
+			"tag": "JavaScript",
+			"title": "Sunny Side Agency",
+			"description": {
+				"short": "Home page for a creative agency",
+				"long": {
+					"why": "Bright, creative, and eye-catching are the words that come to mind when creating this homepage, making it suitable for any agency aiming to capture the viewer's attention while maintaining a user-friendly design. ",
+					"BuiltWith": [
+						"/tech-icons/html.webp",
+						"/tech-icons/css.webp",
+						"/tech-icons/js.webp"
+					]
+				}
+			},
+			"demoURL": "https://admirable-tapioca-856bdb.netlify.app",
+			"githubURL": "https://github.com/Dwayne-B/FEM-sunnysideAgency",
+			"imgURL": "/webp-images/sunnyside.webp"
+		},
+
+		{
+			"tag": "vue",
+			"title": "Base Apparel",
+			"description": {
+				"short": " Landing page for a new clothing brand ",
+				"long": {
+					"why": "A clean designa and easy layout for this landing page built with vue which made it easy to build quickly.",
+					"BuiltWith": ["/tech-icons/vue.webp", "/tech-icons/css.webp"]
+				}
+			},
+			"demoURL": "https://scintillating-donut-87a658.netlify.app/",
+			"githubURL": "https://github.com/Dwayne-B/FEM-BaseApparel",
+			"imgURL": "/webp-images/base.webp"
+		},
+
+		{
+			"tag": "vue",
+			"title": "Expense Traker",
+			"description": {
+				"short": " Expense Tracker app ",
+				"long": {
+					"why": " Users can add and delete expenses while seeing the total income and total expenses. Data persists using local storage. ",
+					"BuiltWith": ["/tech-icons/vue.webp", "/tech-icons/css.webp"]
+				}
+			},
+			"demoURL": "https://658284c029a78935c252527c--steady-scone-b0b8a9.netlify.app/",
+			"githubURL": "https://github.com/Dwayne-B/expense-tracker",
+			"imgURL": "/webp-images/expense-tracker.webp"
+		}
+	]
+}

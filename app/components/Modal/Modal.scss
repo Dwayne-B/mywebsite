@@ -1,0 +1,24 @@
+
+.modal{
+    background-color: #1c1c1c;
+    z-index: 999;
+}
+.modal-content .modal-img{
+
+    width: 5rem;
+    height: 5rem;
+    border-radius: 15px;
+          object-fit: cover;
+  }
+  .modal-body-tech ul{
+    gap: 1.25rem;
+ 
+  }
+  .modal-body-tech img{
+  
+    width: 3rem;
+ 
+    object-fit: contain;
+    object-position: center;
+  }
+    
