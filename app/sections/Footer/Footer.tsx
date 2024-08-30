@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Footer() {
 	return (
-		<div className=' border footer flex lg:flex-row flex-col justify-around h-[30vh] items-center md:x '>
+		<div className='  footer flex lg:flex-row flex-col justify-around h-[30vh] items-center md:x '>
 			<div className='       flex  gap-5  text-white'>
 				<a href='#home'>Home</a>
 				<a href='#about'>About</a>
