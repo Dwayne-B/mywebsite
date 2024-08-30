@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import "./CardOverlay.scss";
 import dynamic from "next/dynamic";
 const Modal = dynamic(() => import("../Modal/Modal"));
@@ -86,11 +87,11 @@ function CardOverlay({
 				initial={"init"}
 				animate={controls}
 				className='flex gap-4  w-full'>
-				<a
+				<Link
 					href={project.demoURL}
 					className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>
 					Demo
-				</a>
+				</Link>
 				<button
 					id={`${cardId}`}
 					className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'

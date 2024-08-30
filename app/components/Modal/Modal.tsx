@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Modal.scss";
 import Image from "next/image";
@@ -87,11 +88,11 @@ function Modal({ setModalIsOpen, project, selectedCard }: ModalProps) {
 					</div>
 					<p className='text-sm'>{project.description.long.why}</p>
 					<div className='btn-container flex gap-5'>
-						<a
+						<Link
 							href={project.githubURL}
 							className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'>
 							GitHub
-						</a>
+						</Link>
 						<button
 							className='about__button hover:border-purple-300 hover:bg-slate-900 w-44 p-3 rounded-2xl border border-emerald-300 text-center'
 							onClick={() => {

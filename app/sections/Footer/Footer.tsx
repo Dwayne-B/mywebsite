@@ -1,14 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 function Footer() {
 	return (
 		<div className='  footer flex lg:flex-row flex-col justify-around h-[30vh] items-center md:x '>
 			<div className='       flex  gap-5  text-white'>
-				<a href='#home'>Home</a>
-				<a href='#about'>About</a>
-				<a href='#projects'>Projects</a>
-				<a href='#contact'>Contact</a>
+				<Link href='#home'>Home</Link>
+				<Link href='#about'>About</Link>
+				<Link href='#projects'>Projects</Link>
+				<Link href='#contact'>Contact</Link>
 			</div>
 			<div className=' flex  gap-11'>
 				<motion.a

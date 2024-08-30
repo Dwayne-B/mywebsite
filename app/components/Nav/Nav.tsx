@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../../public/assets/logo/logo-lg.png";
 import Hamburger from "hamburger-react";
@@ -44,19 +45,19 @@ function Nav({ modalIsOpen }: NavProps) {
 						onClick={() => {
 							setOpen((prev) => !prev);
 						}}>
-						<a href='#projects'>Projects</a>
+						<Link href='#projects'>Projects</Link>
 					</li>
 					<li
 						onClick={() => {
 							setOpen((prev) => !prev);
 						}}>
-						<a href='#about'>About</a>
+						<Link href='#about'>About</Link>
 					</li>
 					<li
 						onClick={() => {
 							setOpen((prev) => !prev);
 						}}>
-						<a href='#contact'>Contact</a>
+						<Link href='#contact'>Contact</Link>
 					</li>
 					<li
 						onClick={() => {

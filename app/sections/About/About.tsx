@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Link from "next/link";
 const SplineElement = dynamic(() => import("../../components/Spline/spline"));
 
 function About() {
@@ -21,20 +22,20 @@ function About() {
 					{`products for the web and mobile world!`}
 				</p>
 				<div className='flex md:gap-16 gap-6   '>
-					<a
+					<Link
 						href='#projects'
 						className='flex-1'>
 						<button className=' hover:border-purple-300 hover:bg-slate-900  p-3 rounded-2xl border border-emerald-300 w-full'>
 							Projects
 						</button>
-					</a>
-					<a
+					</Link>
+					<Link
 						href='#contact'
 						className='flex-1'>
 						<button className=' hover:border-purple-300 hover:bg-slate-900  p-3 rounded-2xl border border-emerald-300  w-full '>
 							Contact
 						</button>
-					</a>
+					</Link>
 				</div>
 			</article>
 			{/* spline*/}
