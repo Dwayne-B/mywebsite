@@ -1,6 +1,4 @@
 .heroSvg {
-	// BUG when using u.toRem(1.25) nothing is applied
-
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -11,16 +9,13 @@
 
 .hero {
 	white-space: nowrap;
-	// display: inline;
 }
 .hero-overlay {
-	// width: 45%;
-	// width: 25px;
 	height: 80%;
 	position: absolute;
 	z-index: -1;
 	left: -30rem;
-	background: url("../../assets//banner.jpg") no-repeat;
+	background: url("/assets/banner.webp") no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -30,12 +25,11 @@
 }
 
 .ho2 {
-	// width: 45%;
 	height: 80%;
 	position: absolute;
 	z-index: -1;
 	right: -30rem;
-	background: url("../../assets//banner.jpg") no-repeat;
+	background: url("/assets/banner.webp") no-repeat;
 	background-position: right;
 	background-size: cover;
 }

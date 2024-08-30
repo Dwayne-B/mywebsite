@@ -37,9 +37,10 @@ function About() {
 					</a>
 				</div>
 			</article>
-
 			{/* spline*/}
-			<SplineElement />
+			<div>
+				<SplineElement />
+			</div>
 		</div>
 	);
 }

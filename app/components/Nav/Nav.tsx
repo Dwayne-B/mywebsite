@@ -1,7 +1,6 @@
 "use client";
-
+import Image from "next/image";
 import Logo from "../../../public/assets/logo/logo-lg.png";
-
 import Hamburger from "hamburger-react";
 import { useState } from "react";
 import "./Nav.scss";
@@ -80,7 +79,8 @@ function Nav({ modalIsOpen }: NavProps) {
 					width={175}
 					height={34}
 				/>
-				<img
+				<Image
+					priority
 					src={Logo.src}
 					alt='Dwayne B Logo'
 					width={115}

@@ -1,4 +1,6 @@
-import Card from "../../components/Card/Card";
+"use client";
+import dynamic from "next/dynamic";
+const Card = dynamic(() => import("../../components/Card/Card"));
 import "./Projects.scss";
 import { useEffect, useState } from "react";
 

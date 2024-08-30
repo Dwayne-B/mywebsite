@@ -1,3 +1,4 @@
+"use client";
 import { useForm } from "@formspree/react";
 import { motion } from "framer-motion";
 import { useFormik } from "formik";

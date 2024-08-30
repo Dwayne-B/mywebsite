@@ -1,8 +1,9 @@
-import { motion } from 'framer-motion';
-import './Footer.scss';
+"use client";
+import { motion } from "framer-motion";
+
 function Footer() {
 	return (
-		<div className='  flex justify-around h-[30vh] items-center footer '>
+		<div className=' border footer flex lg:flex-row flex-col justify-around h-[30vh] items-center md:x '>
 			<div className='       flex  gap-5  text-white'>
 				<a href='#home'>Home</a>
 				<a href='#about'>About</a>
@@ -10,7 +11,6 @@ function Footer() {
 				<a href='#contact'>Contact</a>
 			</div>
 			<div className=' flex  gap-11'>
-			
 				<motion.a
 					target='_blank'
 					href='https://www.linkedin.com/in/dwaynebynumdev/'
@@ -37,7 +37,6 @@ function Footer() {
 								y2='22.5'
 								gradientUnits='userSpaceOnUse'>
 								<stop stopColor='#6FE7B7' />
-								
 							</linearGradient>
 						</defs>
 					</svg>
@@ -68,7 +67,7 @@ function Footer() {
 								x2='27.8037'
 								y2='22.0458'
 								gradientUnits='userSpaceOnUse'>
-									<stop stopColor='#6FE7B7' />
+								<stop stopColor='#6FE7B7' />
 							</linearGradient>
 						</defs>
 					</svg>

@@ -1,4 +1,6 @@
-import HeroSvg from "../../components/HeroSvg/HeroSvg";
+"use client";
+import dynamic from "next/dynamic";
+const HeroSvg = dynamic(() => import("../../components/HeroSvg/HeroSvg"));
 import "./Hero.scss";
 import { motion } from "framer-motion";
 const HeroAnimation = {
@@ -8,7 +10,6 @@ const HeroAnimation = {
 	visible: {
 		opacity: 1,
 		transition: {
-			delay: 2.75,
 			duration: 0.4,
 		},
 	},
@@ -46,7 +47,9 @@ function Hero() {
 				initial='init'
 				animate='visible'
 				href='#contact'>
-				<motion.button className='hero__button hover:border-purple-300 hover:bg-slate-900 px-10 h-20  rounded-2xl border border-emerald-300 '>
+				<motion.button
+					style={{ fontSize: "2rem", transitionDuration: "0.3s" }}
+					className=' hover:border-purple-300 hover:bg-slate-900 px-10 h-20  rounded-2xl border border-emerald-300 '>
 					{"Let's Collaborate!"}
 				</motion.button>
 			</motion.a>
