@@ -1,10 +1,22 @@
 "use client";
-import Link from "next/link";
-import Image from "next/image";
-import Logo from "../../../public/assets/logo/logo-lg.png";
-import Hamburger from "hamburger-react";
+import dynamic from 'next/dynamic';
+
+const Link = dynamic(() => import('next/link'), { ssr: false });
+const Image = dynamic(() => import('next/image'), { ssr: false });
+const Hamburger = dynamic(() => import('hamburger-react'), { ssr: false });
+import Logo from "../../../public/assets/logo/logo-lg.webp";
 import { useState } from "react";
 import "./Nav.scss";
+
+
+
+
+// import Link from "next/link";
+// import Image from "next/image";
+// import Logo from "../../../public/assets/logo/logo-lg.webp";
+// import Hamburger from "hamburger-react";
+// import { useState } from "react";
+// import "./Nav.scss";
 
 import { motion } from "framer-motion";
 
@@ -27,6 +39,7 @@ const variants = {
 };
 
 function Nav({ modalIsOpen }: NavProps) {
+
 	const [isOpen, setOpen] = useState(false);
 	const [color, setColor] = useState("#fff");
 	return (
@@ -72,22 +85,14 @@ function Nav({ modalIsOpen }: NavProps) {
 
 			)}
    */}
-			<picture>
-				<source
-					srcSet={Logo.src}
-					type='image/png'
-					media='(min-width: 650px)'
-					width={175}
-					height={34}
-				/>
+
 				<Image
 					priority
 					src={Logo.src}
 					alt='Dwayne B Logo'
 					width={115}
-					height={34}
-				/>
-			</picture>
+					height={34}/>
+
 
 			<Hamburger
 				color={color}

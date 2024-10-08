@@ -1,9 +1,8 @@
 "use client";
-import dynamic from "next/dynamic";
-const CardOverlay = dynamic(() => import("../CardOverlay/CardOverlay"));
+import dynamic from 'next/dynamic';
+const CardOverlay = dynamic(() => import('../CardOverlay/CardOverlay'), { ssr: false });
 import "./Card.scss";
 import { motion, useAnimationControls } from "framer-motion";
-
 interface Project {
 	tag: string;
 	title: string;

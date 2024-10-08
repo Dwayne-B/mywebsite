@@ -1,7 +1,9 @@
 import dynamic from "next/dynamic";
-import Link from "next/link";
-const SplineElement = dynamic(() => import("../../components/Spline/spline"));
 
+import Loading from "../../loading"
+const Link = dynamic(() => import("next/link"), { ssr: false });
+const SplineElement = dynamic(() => import("../../components/Spline/spline"), { ssr: false,
+loading:()=><Loading/> });
 function About() {
 	return (
 		<div
@@ -17,7 +19,7 @@ function About() {
 					<span className='text--highlight'>
 						independent creative developer
 					</span>
-					{`I build `}
+					{` I build `}
 					<span style={{ color: "#757171" }}> (and occasionally design) </span>
 					{`products for the web and mobile world!`}
 				</p>
@@ -40,8 +42,11 @@ function About() {
 			</article>
 			{/* spline*/}
 			<div>
+
 				<SplineElement />
+
 			</div>
+
 		</div>
 	);
 }

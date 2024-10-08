@@ -1,8 +1,10 @@
 "use client";
-import Link from "next/link";
 import "./CardOverlay.scss";
 import dynamic from "next/dynamic";
-const Modal = dynamic(() => import("../Modal/Modal"));
+const Link = dynamic(()=>import("next/link"),{ssr:false})
+const Modal = dynamic(() => import("../Modal/Modal"),{
+	ssr:false
+});
 import { motion, AnimationControls } from "framer-motion";
 interface Project {
 	tag: string;

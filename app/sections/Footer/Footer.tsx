@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import dynamic from 'next/dynamic';
+const Link = dynamic(() => import('next/link'), { ssr: false });
 function Footer() {
 	return (
 		<div className='  footer flex lg:flex-row flex-col justify-around h-[30vh] items-center md:x '>

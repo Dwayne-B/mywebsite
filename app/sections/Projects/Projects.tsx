@@ -1,6 +1,10 @@
 "use client";
 import dynamic from "next/dynamic";
-const Card = dynamic(() => import("../../components/Card/Card"));
+const Card =  dynamic(() => import("../../components/Card/Card"), {
+	ssr:false
+})
+import Loading from "../../loading"
+import { Suspense } from "react";
 import "./Projects.scss";
 import { useEffect, useState } from "react";
 
@@ -76,6 +80,8 @@ function Projects({ modalIsOpen, setModalIsOpen }: ModalProps) {
 	}, [projects, tag]);
 
 	return (
+
+
 		<div
 			id='projects'
 			className='section my-24'>
@@ -112,7 +118,9 @@ function Projects({ modalIsOpen, setModalIsOpen }: ModalProps) {
 					</li>
 				</ul>
 			</span>
+<Suspense fallback={<Loading/>}>
 			<div className='flex flex-wrap justify-center gap-10 mt-8'>
+
 				{filteredProjects.map((project, i) => {
 					return (
 						<Card
@@ -126,8 +134,13 @@ function Projects({ modalIsOpen, setModalIsOpen }: ModalProps) {
 						/>
 					);
 				})}
+
 			</div>
+	</Suspense>
+
 		</div>
+
+
 	);
 }
 

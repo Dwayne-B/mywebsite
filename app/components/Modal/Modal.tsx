@@ -1,9 +1,10 @@
 "use client";
-import Link from "next/link";
+import dynamic from 'next/dynamic';
+const Link = dynamic(() => import('next/link'), { ssr: false });
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Modal.scss";
 import Image from "next/image";
 import { faX } from "@fortawesome/free-solid-svg-icons";
+import "./Modal.scss";
 import { motion } from "framer-motion";
 interface Project {
 	tag: string;

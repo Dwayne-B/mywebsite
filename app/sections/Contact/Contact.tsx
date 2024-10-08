@@ -1,7 +1,8 @@
 import dynamic from "next/dynamic";
-const ContactForm = dynamic(
-	() => import("../../components/ContactForm/ContactForm")
-);
+import Loading from "../../loading"
+const ContactForm  = dynamic(() => import('../../components/ContactForm/ContactForm'), {
+ssr:false,
+loading:()=><Loading/>})
 function Contact() {
 	return (
 		<>

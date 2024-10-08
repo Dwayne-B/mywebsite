@@ -1,6 +1,4 @@
-"use client";
-import dynamic from "next/dynamic";
-const HeroSvg = dynamic(() => import("../../components/HeroSvg/HeroSvg"));
+import HeroSvg from "../../components/HeroSvg/HeroSvg";
 import "./Hero.scss";
 import { motion } from "framer-motion";
 const HeroAnimation = {
@@ -27,8 +25,10 @@ const HeroAnimation = {
 	},
 };
 function Hero() {
+
 	return (
-		<motion.div
+
+			<motion.div
 			id='home'
 			className=' hero relative h-screen flex flex-col justify-evenly mb-[-40px] items-center text-center  lg:gap-32 gap-8 px-6'>
 			<motion.div
@@ -54,6 +54,7 @@ function Hero() {
 				</motion.button>
 			</motion.a>
 		</motion.div>
+
 	);
 }
 
