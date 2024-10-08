@@ -2,21 +2,13 @@
 import dynamic from 'next/dynamic';
 
 const Link = dynamic(() => import('next/link'), { ssr: false });
-const Image = dynamic(() => import('next/image'), { ssr: false });
+
 const Hamburger = dynamic(() => import('hamburger-react'), { ssr: false });
+import Image from 'next/image';
 import Logo from "../../../public/assets/logo/logo-lg.webp";
 import { useState } from "react";
 import "./Nav.scss";
 
-
-
-
-// import Link from "next/link";
-// import Image from "next/image";
-// import Logo from "../../../public/assets/logo/logo-lg.webp";
-// import Hamburger from "hamburger-react";
-// import { useState } from "react";
-// import "./Nav.scss";
 
 import { motion } from "framer-motion";
 
@@ -46,7 +38,7 @@ function Nav({ modalIsOpen }: NavProps) {
 		<nav
 			className={` ${
 				modalIsOpen ? "z-[3]" : "z-[999]"
-			} flex justify-between items-center  px-10 py-6 w-full  fixed bg-[#14181d] right-0 `}>
+			} flex justify-between items-center  px-10 py-6 w-full  fixed bg-[#000000] right-0 `}>
 			<motion.div
 				variants={variants}
 				initial={"close"}
@@ -86,12 +78,14 @@ function Nav({ modalIsOpen }: NavProps) {
 			)}
    */}
 
-				<Image
+<Image
 					priority
 					src={Logo.src}
 					alt='Dwayne B Logo'
 					width={115}
 					height={34}/>
+
+
 
 
 			<Hamburger

@@ -6,7 +6,8 @@ import dynamic from "next/dynamic";
 import Loading from "./loading";
 
 // Dynamically import sections to enable lazy loading
-const Hero = dynamic(() => import("./sections/Hero/Hero"));
+
+import Hero from "./sections/Hero/Hero"
 const About = dynamic(() => import("./sections/About/About"));
 const Projects = dynamic(() => import("./sections/Projects/Projects"), { ssr: false });
 const Contact = dynamic(() => import("./sections/Contact/Contact"));
@@ -18,16 +19,17 @@ export default function App() {
   return (
     <main className='text-white'>
       <Nav modalIsOpen={modalIsOpen} />
+		<Hero />
       <Suspense fallback={<Loading />}>
-        <Hero />
         <About />
+
         <Projects
           modalIsOpen={modalIsOpen}
           setModalIsOpen={setModalIsOpen}
         />
         <Contact />
         <Footer />
-      </Suspense>
+</Suspense>
     </main>
   );
 }
