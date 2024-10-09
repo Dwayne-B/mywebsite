@@ -2,8 +2,7 @@ import dynamic from "next/dynamic";
 
 import Loading from "../../loading"
 const Link = dynamic(() => import("next/link"), { ssr: false });
-const SplineElement = dynamic(() => import("../../components/Spline/spline"), { ssr: false,
-loading:()=><Loading/> });
+const SplineElement = dynamic(() => import("../../components/Spline/spline"), { ssr: true, loading:()=><Loading/> });
 function About() {
 	return (
 		<div

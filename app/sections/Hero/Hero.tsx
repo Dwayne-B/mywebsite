@@ -14,13 +14,13 @@ const HeroAnimation = {
 	side: {
 		width: "45%",
 		transition: {
-			duration: 3,
+			duration: 2,
 		},
 	},
 	sideInit: {
 		width: "0px",
 		transition: {
-			duration: 3,
+			duration: 2,
 		},
 	},
 };
